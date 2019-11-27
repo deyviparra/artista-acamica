@@ -34,16 +34,16 @@ nav {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, 0));
 }
 
-nav ul li a:link {
+nav a:link {
   text-decoration: none;
 }
-nav ul li a {
+nav a {
   color: white;
   border: 2px solid white;
   padding: 15px 20px;
   border-radius: 15px;
 }
-nav ul li a:hover {
+nav a:hover {
   background-color: #9b1b1c;
   color: white;
 }
@@ -54,32 +54,32 @@ ul,
 ol {
   list-style: none;
 }
-img {
+.img-galery, .logo-titulo {
   max-width: 33%;
 }
 h2 {
   margin-top: 90px;
   margin-bottom: 20px;
 }
-#name h1 {
+.name h1 {
   text-align: center;
   font-size: 48px;
   margin: 15px;
 }
-#name p {
+.name p {
   max-width: 70%;
   text-align: justify;
   font-size: 20px;
   margin-bottom: 30px;
 }
-#name {
+.name {
   display: flex;
   align-items: center;
   flex-flow: column;
   margin-bottom: 30px;
 }
 
-#disco {
+.disco {
   color: white;
   background-image: url("offspring.jpg");
   background-attachment: fixed;
@@ -95,7 +95,7 @@ h2 {
   -moz-box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
 }
-#disco li {
+.disco li {
   font-size: 30px;
   padding-bottom: 5px;
 }
@@ -103,18 +103,18 @@ h2 {
   font-size: 48px;
   text-align: center;
 }
-#songs ul {
+.songs ul {
   font-size: 30px;
   text-align: justify;
   color: white;
 }
-#linkweb {
+.linkweb {
   padding: 60px 0px;
   background-color: black;
   margin-left: -30px;
   margin-right: -30px;
 }
-#songs ul li {
+.songs ul li {
   margin: 10px;
 }
 .alpha {
@@ -130,9 +130,9 @@ h2 {
 }
 .alpha::before {
   border-top: 8px solid black;
-  -webkit-box-shadow: inset 3px 3px 11px 1px rgba(0,0,0,1);
-  -moz-box-shadow: inset 3px 3px 11px 1px rgba(0,0,0,1);
-  box-shadow: inset 3px 3px 11px 1px rgba(0,0,0,1);
+  -webkit-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
+  box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
   content: "";
   position: absolute;
   width: 150%;
@@ -140,29 +140,29 @@ h2 {
   top: 15%;
   left: -50%;
   z-index: -1;
-  background: linear-gradient(to bottom, #2b2a2a , #18a84b );
+  background: linear-gradient(to bottom, #2b2a2a, #18a84b);
   -webkit-transform: rotate(358deg);
   transform: rotate(358deg);
 }
-#songs ul li a {
+.songs ul li a {
   color: white;
 }
-#songs div {
+.songs div {
   display: flex;
   justify-content: space-around;
 }
-#songs img {
+.songs img {
   max-width: 200px;
   max-height: 200px;
   -webkit-transform: translateX(200px);
 }
-#images img {
+.images img {
   border-radius: 15px;
 }
-#images h2 {
+.images h2 {
   font-size: 60px;
 }
-#fav {
+.fav {
   display: flex;
   flex-flow: column;
   align-items: center;
