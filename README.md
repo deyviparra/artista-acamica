@@ -1,1 +1,1 @@
-artista-acamica
+mi artista favorito
