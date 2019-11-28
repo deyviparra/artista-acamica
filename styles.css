@@ -26,7 +26,7 @@ header {
   position: sticky;
   -webkit-position: sticky;
   top: 0px;
-
+  z-index: 1;
   margin-left: -30px;
   margin-right: -30px;
 }
@@ -54,7 +54,8 @@ ul,
 ol {
   list-style: none;
 }
-.img-galery, .logo-titulo {
+.img-galery,
+.logo-titulo {
   max-width: 33%;
 }
 h2 {
@@ -116,12 +117,14 @@ h2 {
 }
 .songs ul li {
   margin: 10px;
+  
 }
 .alpha {
   display: flex;
   flex-flow: column;
   position: relative;
-  overflow: hidden;
+  z-index: -2;
+  
   padding-bottom: 90px;
   padding-top: 45px;
   margin-top: 60px;
@@ -129,15 +132,15 @@ h2 {
   margin-right: -50px;
 }
 .alpha::before {
-  border-top: 8px solid black;
-  -webkit-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
-  -moz-box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
-  box-shadow: inset 3px 3px 11px 1px rgba(0, 0, 0, 1);
+  border-bottom: 8px solid black;
+  -webkit-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
   content: "";
   position: absolute;
   width: 150%;
   height: 80%;
-  top: 15%;
+  top: 13%;
   left: -50%;
   z-index: -1;
   background: linear-gradient(to bottom, #2b2a2a, #18a84b);
