@@ -4,35 +4,33 @@
   border: 0px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body {
-  background-image: linear-gradient(to bottom, #939393, #050505);
-  margin: 0px 30px;
+body { 
+  background-color: #363636;
   color: white;
 }
 section {
-  padding-top: 60px;
+  min-height: 100vh;
+  padding: 30px 0px 0px;
 }
-nav ul {
-  display: flex;
-  justify-content: space-between;
+nav ul li{
+  display: inline;
   padding: 15px;
-  align-items: center;
-}
-nav ul img {
+}  
+header img {
   max-width: 300px;
-  margin-right: 500px;
 }
 header {
+  min-height: 15vh;
   position: sticky;
   -webkit-position: sticky;
   top: 0px;
   z-index: 1;
-  margin-left: -30px;
-  margin-right: -30px;
-}
-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, 0));
 }
+
 
 nav a:link {
   text-decoration: none;
@@ -41,6 +39,7 @@ nav a {
   color: white;
   border: 2px solid white;
   padding: 15px 20px;
+  margin: 15px;
   border-radius: 15px;
 }
 nav a:hover {
@@ -62,26 +61,31 @@ h2 {
   margin-top: 90px;
   margin-bottom: 20px;
 }
-.name h1 {
-  text-align: center;
-  font-size: 48px;
-  margin: 15px;
-}
 .name p {
-  max-width: 70%;
+  max-width: 80%;
   text-align: justify;
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .name {
+  padding-top: 80px;
+  background-image: linear-gradient(to bottom, #939393, #050505);
   display: flex;
   align-items: center;
   flex-flow: column;
-  margin-bottom: 30px;
+  margin-top:-100px ;
 }
-
 .disco {
+  background-color: #460101;
+  display: flex;
+  align-items: center;
+}
+.parallax {
+  margin-left: auto;
+  margin-right: auto;
   color: white;
+  width: 90%;
   background-image: url("offspring.jpg");
   background-attachment: fixed;
   background-position: top;
@@ -95,6 +99,7 @@ h2 {
   -webkit-box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.75);
+  
 }
 .disco li {
   font-size: 30px;
@@ -119,12 +124,15 @@ h2 {
   margin: 10px;
   
 }
+.songs{
+  overflow: hidden;
+  
+}
 .alpha {
   display: flex;
   flex-flow: column;
   position: relative;
   z-index: -2;
-  
   padding-bottom: 90px;
   padding-top: 45px;
   margin-top: 60px;
@@ -132,6 +140,7 @@ h2 {
   margin-right: -50px;
 }
 .alpha::before {
+  border-top: 1px solid black;
   border-bottom: 8px solid black;
   -webkit-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
@@ -143,7 +152,7 @@ h2 {
   top: 13%;
   left: -50%;
   z-index: -1;
-  background: linear-gradient(to bottom, #2b2a2a, #18a84b);
+  background: linear-gradient(to bottom, #460101, rgb(177, 30, 33));
   -webkit-transform: rotate(358deg);
   transform: rotate(358deg);
 }
@@ -154,10 +163,11 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+
 .songs img {
   max-width: 200px;
   max-height: 200px;
-  -webkit-transform: translateX(200px);
+  
 }
 .images img {
   border-radius: 15px;
@@ -165,11 +175,13 @@ h2 {
 .images h2 {
   font-size: 60px;
 }
+.images{
+  background-color: #460101;
+}
 .fav {
   display: flex;
-  flex-flow: column;
+  flex-flow: column;  
   align-items: center;
-  margin-bottom: 30px;
 }
 footer div p {
   display: flex;
