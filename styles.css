@@ -56,7 +56,7 @@ ol {
 .img-galery,
 .logo-titulo {
   max-width: 33%;
-}
+} 
 h2 {
   margin-top: 90px;
   margin-bottom: 20px;
@@ -126,40 +126,36 @@ h2 {
 }
 .songs{
   overflow: hidden;
-  
-}
-.alpha {
-  display: flex;
-  flex-flow: column;
   position: relative;
-  z-index: -2;
-  padding-bottom: 90px;
-  padding-top: 45px;
+}
+.songs-background{
+  width: 130%;
+  height: 400px;
+  position: relative;
   margin-top: 60px;
-  margin-left: -50px;
-  margin-right: -50px;
-}
-.alpha::before {
-  border-top: 1px solid black;
-  border-bottom: 8px solid black;
-  -webkit-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 80%;
-  top: 13%;
-  left: -50%;
-  z-index: -1;
+ left: -15%;
+  transform: rotate(-2deg);
   background: linear-gradient(to bottom, #460101, rgb(177, 30, 33));
-  -webkit-transform: rotate(358deg);
-  transform: rotate(358deg);
+  box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.75);
+  border-top: 1px solid black;
+  border-bottom: 12px solid black;
 }
+.alpha{
+  margin-top: -40px;
+  width: 100%;
+  
+  transform: rotate(2deg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center; 
+}
+
 .songs ul li a {
   color: white;
 }
-.songs div {
+.alpha div {
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }
